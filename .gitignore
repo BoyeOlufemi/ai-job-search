@@ -95,3 +95,16 @@ upskill/*.md
 
 # Brainstorm mockups (superpowers visual companion) - never ship
 .superpowers/
+
+# Profile/config templates populated in place by /setup and /apply with real
+# personal data (name, employer, location, search criteria). Tracked upstream
+# as blank [PLACEHOLDER] templates — local edits must never be committed.
+# cv/main_example.tex is handled separately via `git update-index --skip-worktree`
+# since it's also the one file the cv/main_*.* block explicitly un-ignores.
+.claude/skills/job-application-assistant/01-candidate-profile.md
+.claude/skills/job-application-assistant/02-behavioral-profile.md
+.claude/skills/job-application-assistant/04-job-evaluation.md
+.claude/skills/job-application-assistant/05-cv-templates.md
+.claude/skills/job-application-assistant/07-interview-prep.md
+.claude/skills/job-scraper/search-queries.md
+CLAUDE.md
